@@ -27,7 +27,7 @@
 *.hi
 *.chi
 *.chs.h
-.virthualenv
+.virtualenv
 *.jar
 *.war
 *.ear
