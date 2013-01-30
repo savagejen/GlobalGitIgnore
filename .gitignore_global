@@ -107,6 +107,9 @@ csx
 *.bak
 
 # Source control files
+.bzr
+.bazaar
+.bzrignore
 .hgignore_global
 .hgrc
 .hg
@@ -130,6 +133,7 @@ csx
 *.pem
 *.key
 *.kdb
+*.gpg
 *.passwords
 passwords
 passwd
@@ -141,6 +145,42 @@ Web.config #Web.config sometimes contains connection strings with passwords.
 httpd.conf
 wp-config.php
 
+# config files with privacy issues
+.COLReg 
+.GalleryRemote/*
+.ICEauthority
+.Skype/*
+.TaskCoach/*
+.Xauthority
+.bash_history
+.bash_history 
+.bazaar/*
+.bitpim-files/*
+.bzr
+.bzrignore
+.dropbox
+.dropbox/*
+.dvdcss/*
+.evolution/*
+.filezilla/*
+.gnupg
+.googlecl/*
+.known_ssh_hostnames
+.links/*
+.lynxrc
+.minirc*
+.mysql_history
+.netextender
+.netrc
+.pinerc
+.recently-used*
+.serverauth.*
+.sqlite_history
+.sversionrc
+.vim*
+.zsh_history
+gpg.conf
+
 # OS files
 .DS_Store
 .DS_Store?
@@ -149,10 +189,11 @@ wp-config.php
 ._*
 .Spotlight-V100
 .Trashes
-.bash_history
-.zsh_history
+.Trash
+.Trash-*
 Icon?
 ehthumbs.db
 Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
