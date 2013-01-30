@@ -137,6 +137,7 @@ shadow
 group
 Web.config #Web.config sometimes contains connection strings with passwords.
 .htaccess
+.htpasswd
 httpd.conf
 wp-config.php
 
