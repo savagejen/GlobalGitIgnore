@@ -196,3 +196,5 @@ Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
+# Cloud9 IDE
+.c9revisions
