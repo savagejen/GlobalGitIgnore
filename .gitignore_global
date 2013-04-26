@@ -1,44 +1,37 @@
 # Reference: https://help.github.com/articles/ignoring-files
 # To use, run: git config --global core.excludesfile ~/GlobalGitIgnore/.gitignore_global
 
-# compiler generated stuff, dump files, test file junk, editor junk, packages, etc
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-*.so.*
-*.slo
-*.lo
-*.apk
-*.ap_
-*.dylib
-*.lai
-*.la
-*.a
-*.lib
-*.out
-*.app
-.eunit
-*.beam
-*.plt
-*.dump
-*.hi
-*.chi
-*.chs.h
+# Compiler generated stuff.  Usually you want people to make these from source, so no need to check them in.
+*.com           # Command file, a type of executable file.
+*.class         # Java class file, contains bytecode created by the Java compiler.
+*.dll           # Dynamic-link library, a shared library
+*.exe           # Executable file
+*.o             # Un-linked program object files from compiler
+*.so            # Shared object library/module/ELF
+*.so.*          # Versioned shared object library
+*.slo           # Compiled object file
+*.apk           # Android application package
+*.ap_           # Android resources before they are built into .apk
+*.dylib         # Dynamic Library
+*.lai           # Compiled static library
+*.la            # Compiled static library
+*.a             # Compiled static library
+*.lib           # Library
+*.out           # gcc default compiled source
+*.app           # osx application file
+*.beam          # compiled erlang module
+*.hi            # haskell interface file
 .virtualenv
-*.jar
-*.war
+*.jar # java archive file
+*.war # web based java archive file
 *.ear
-*.suo
+*.suo 
 *.user
 *.sln.docstates
 *.swp
-*.userprefs
 *.pidb
 *.nib
-.settings
+.settings # settings file
 .classpath
 .project
 *_i.c
@@ -83,10 +76,13 @@ csx
 .installed.cfg
 .coverage
 .tox
-*.dmg
+*.dmg # disk image file
 *.fmx
 *.mmx
 *.plx
+
+# dump files and crash logs that could contain sensitive information
+*.dump # dump file, could be genetated by multiple applications
 
 # compressed and bundled files
 *.7z
@@ -127,13 +123,18 @@ csx
 *.dex
 
 # keys and passwords and config files that contain them
-*.rsa
-*.dsa
-*.asc
+*.rsa #encryption key
+*.dsa #encryption key
+*.asc #encryption key
 *.pem
-*.key
-*.kdb
-*.gpg
+*.key #encryption key
+*.gpgkey #gpg key
+*.kdb #keepass db
+*.gpg #encryption key
+*.pkr #public keyring
+*.skr #secret keyring
+*.crt #root cert
+*.der #root cert
 *.passwords
 passwords
 passwd
@@ -145,8 +146,8 @@ Web.config #Web.config sometimes contains connection strings with passwords.
 httpd.conf
 wp-config.php
 
-# config files with privacy issues
-.COLReg 
+# config files (sometimes have privacy issues)
+.COLReg #Used by Citrix GoToMeeting
 .GalleryRemote/*
 .ICEauthority
 .Skype/*
@@ -179,6 +180,8 @@ wp-config.php
 .vim*
 .zsh_history
 gpg.conf
+*.user # user preference file
+*.userprefs #user preference file
 
 # OS files
 .DS_Store
