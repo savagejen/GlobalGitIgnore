@@ -162,6 +162,7 @@ Web.config #Web.config sometimes contains connection strings with passwords.
 .htpasswd
 httpd.conf
 wp-config.php
+s3.yml #amazon s3 credentials
 
 # config files (sometimes have privacy issues)
 .COLReg #Used by Citrix GoToMeeting
